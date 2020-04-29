@@ -3,10 +3,3 @@ spring:
     cassandra:
       keyspace-name: sample_demo
       port: 9042
-
-
-#cassandra:
-#  contactpoints: 127.0.0.1
-#  port: 9042
-#  keyspace: sample_demo
-#  basepackages: br.com.itau.dashparametrizacao
