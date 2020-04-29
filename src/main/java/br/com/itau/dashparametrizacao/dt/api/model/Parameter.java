@@ -1,4 +1,4 @@
-package br.com.itau.dashparametrizacao.model;
+package br.com.itau.dashparametrizacao.dt.api.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,5 +16,9 @@ public class Parameter {
     @PrimaryKey
     private int id;
     private String name;
+    private String description;
+    private String application;
+    private Type type;
+    private String key;
     private String value;
 }

@@ -1,4 +1,4 @@
-package br.com.itau.dashparametrizacao;
+package br.com.itau.dashparametrizacao.dt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

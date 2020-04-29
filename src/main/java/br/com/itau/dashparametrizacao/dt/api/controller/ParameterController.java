@@ -1,7 +1,7 @@
-package br.com.itau.dashparametrizacao.controller;
+package br.com.itau.dashparametrizacao.dt.api.controller;
 
-import br.com.itau.dashparametrizacao.model.Parameter;
-import br.com.itau.dashparametrizacao.service.ParameterService;
+import br.com.itau.dashparametrizacao.dt.api.model.Parameter;
+import br.com.itau.dashparametrizacao.dt.api.service.ParameterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -22,9 +22,9 @@ public class ParameterController {
         return patameters;
     }
 
-    @GetMapping("/{name}")
-    public Mono<Parameter> getByName(@PathVariable String name) {
-        Mono<Parameter> patameters = parameterService.getByName(name);
+    @GetMapping("/{id}")
+    public Mono<Parameter> getById(@PathVariable int id) {
+        Mono<Parameter> patameters = parameterService.getById(id);
         return patameters;
     }
 

@@ -1,7 +1,7 @@
-package br.com.itau.dashparametrizacao.service;
+package br.com.itau.dashparametrizacao.dt.api.service;
 
-import br.com.itau.dashparametrizacao.model.Parameter;
-import br.com.itau.dashparametrizacao.repository.ParameterRepository;
+import br.com.itau.dashparametrizacao.dt.api.repository.ParameterRepository;
+import br.com.itau.dashparametrizacao.dt.api.model.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -22,7 +22,7 @@ public class ParameterService {
         parameterRepository.insert(parameter).subscribe();
     }
 
-    public Mono<Parameter> getByName(String name) {
-        return parameterRepository.getByName(name);
+    public Mono<Parameter> getById(int id) {
+        return parameterRepository.getById(id);
     }
 }
